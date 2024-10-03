@@ -10,4 +10,9 @@ public class BasicController {
     public Mono<String> greeting(){
         return Mono.just("CI/CD Practice").log();
     }
+
+    @GetMapping("/greeting2")
+    public Mono<String> greeting2(){
+        return Mono.just("New Greeting").log();
+    }
 }
